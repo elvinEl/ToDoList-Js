@@ -6,12 +6,17 @@ deletedTodos.forEach(function (button) {
     deleted.remove();
   });
 });
-console.log(deletedTodos);
-/////////////////////DELETED ALL////////////////////////////////
+/////////////////////DELETED ALL TODOS////////////////////////////////
 const deletedAllTodos = document.querySelector("#clearButton");
 deletedAllTodos.addEventListener("click", function (event) {
   event.preventDefault();
   const listGroup = document.querySelector(".list-group");
   listGroup.remove();
 });
-console.log(deletedAllTodos);
+////////////////////ADDED TODOS////////////////////////////////
+const inputElement = document.querySelector("#todoName");
+inputElement.addEventListener("input",function(){
+    const value = inputElement.value
+    console.log(value);
+})
+console.log(inputElement);
